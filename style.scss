@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+/*Logo*/
+#Untangle{
+    font-family: 'Fuggles', cursive;
+    font-size: 3rem;
+    width:1.5rem;
+    text-transform: lowercase;
+    color:white;
+    font-weight: 400;
+}
+
+/*Navigation Bar*/
+.nav{
+    border-bottom: 1px gray solid;
+    position: fixed;
+    top:0;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    color: blanchedalmond;
+
+    &_toggle{
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+    
+
+    svg{
+        width:1.5rem;
+        fill:white;
+        padding-top: 1rem;
+    }
+
+    .close{
+        display: none;
+    }
+
+    .menu{
+        margin-top: 0.2rem;
+    }
+
+    }
+    
+    &_checkbox{
+        display: none;
+    }
+
+    &_menu{
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        align-items: center;
+        margin: 1rem;
+
+        li{
+            text-transform: uppercase;
+            list-style: none;
+            display: none;
+            &:first-child{
+                margin-right: auto;
+                display: block;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color:inherit;
+        }
+
+        
+
+    }
+
+    svg{
+        width: 3rem;
+        padding-right: 1rem;
+    }
+} 
+#nav_checkbox:checked ~ ul.nav_menu li{
+        display: block;
+    }
+
+#nav_checkbox:checked ~ label.nav_toggle .close{
+        display: block;
+    }
+
+#nav_checkbox:checked ~ label.nav_toggle .menu{
+        display: none;
+    }
+
+
+/*Content*/
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    height: auto;
+    background: black;
+}
+
+/*Landing*/
+
+#landing h1{
+    font-size: 4rem;
+    color:rgb(167, 11, 11);
+    font-family: 'Fuggles', cursive;
+
+}
+
+#landing{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 100vh;
+    justify-content: center;
+    background-image: url('Untangle_main.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 4rem;
+}
+
+/*ATG*/
+
+#aboutthisgame{
+    display: inherit;
+    height: 100vh;
+    justify-content: inherit;
+    background-image: url('Untangle_library.PNG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    color:whitesmoke;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+
+}
+
+#aboutthisgame h2{
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+#aboutthisgame h3{
+    text-transform: capitalize;
+    font-size: 1.8rem;
+}
+
+#purchase{
+    display: inherit;
+    height: 100vh;
+    justify-content: inherit;
+    background-image: url('Untangle_classroom.PNG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    color:whitesmoke;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+
+}
+#purchase h2{
+        color:white;
+        font-size:5rem;
+        text-transform: uppercase;
+        background-color: lightgrey transparent;
+}
+
+.btn{
+    border:1px grey solid;
+    font-size: 1.2rem;
+    color:black;
+    display: inline-block;
+    background-color: grey;
+}
+
+.btn:hover{
+    background: #f4f4f4;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 1rem;
+    color: black;
+    margin:auto;
+    background:  rgba(0,0,0,0.4);
+
+    h3{
+        font-size: 1.8rem;
+        color:honeydew
+    }
+}
+
+@media (min-width:560px){
+        .nav{
+            &_toggle{
+                display: none;
+            }
+            &_menu{
+                flex-direction: row;
+            }
+            li{
+                display: block;
+            
+            }
+
+            a{
+                display: inline-block;
+            }
+            a:hover{
+                background: #ddd;
+                color: black;
+                display: inline-block;
+                
+
+            }
+
+        
+        }
+
+        #aboutthisgame{
+            padding-top: 20vh;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .btn{
+            border:1px grey solid;
+            font-size: 1.5rem;
+            color:black;
+            display: inline-block;
+            background-color: grey;
+        }
+
+        #purchase{
+            display: inherit;
+            height: 100vh;
+            justify-content:center;
+            text-align: center;
+            align-items:center;
+            padding-top: 1;
+    
+    
+        }
+
+        #purchase h2{
+            color:black;
+            font-size:6rem;
+            text-transform: uppercase;
+            background-color: lightgrey;
+    }
+
+       
+
+        
+}
+
+
+    
+
+
+
+
+
+    
+    
+

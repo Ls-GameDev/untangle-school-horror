@@ -1,0 +1,17 @@
+<h2>characters</h2>
+        <h3>Daniel</h3>
+        <p>Have a great talent and good music. 
+            Always get good results and have a positive attitude in studying.</p>
+        <h3>Jane</h3>
+        <p>She used to be popular until Alisha transferred to the school. 
+            Getting good results every time and always placed top 
+            in the class.</p>
+        <h3>Shiv</h3>
+        <p>She is proficient in mathematics and chemistry. 
+            Also loves to take care of others, 
+            coupled with the heroic appearance and personality</p>
+        <h3>Will</h3>
+        <p>Very good in academics and sports, 
+            also loves to take care of others, and has a heroic personality.</p>
+        <h3>Pheobe</h3>
+        <p>Like to watch movies and dream of becoming a movie director.</p>

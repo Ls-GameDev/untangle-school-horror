@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+/*Logo*/
+#Untangle {
+  font-family: 'Fuggles', cursive;
+  font-size: 3rem;
+  width: 1.5rem;
+  text-transform: lowercase;
+  color: white;
+  font-weight: 400;
+}
+
+/*Navigation Bar*/
+.nav {
+  border-bottom: 1px gray solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: blanchedalmond;
+}
+
+.nav_toggle {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+}
+
+.nav_toggle svg {
+  width: 1.5rem;
+  fill: white;
+  padding-top: 1rem;
+}
+
+.nav_toggle .close {
+  display: none;
+}
+
+.nav_toggle .menu {
+  margin-top: 0.2rem;
+}
+
+.nav_checkbox {
+  display: none;
+}
+
+.nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+}
+
+.nav_menu li {
+  text-transform: uppercase;
+  list-style: none;
+  display: none;
+}
+
+.nav_menu li:first-child {
+  margin-right: auto;
+  display: block;
+}
+
+.nav_menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav svg {
+  width: 3rem;
+  padding-right: 1rem;
+}
+
+#nav_checkbox:checked ~ ul.nav_menu li {
+  display: block;
+}
+
+#nav_checkbox:checked ~ label.nav_toggle .close {
+  display: block;
+}
+
+#nav_checkbox:checked ~ label.nav_toggle .menu {
+  display: none;
+}
+
+/*Content*/
+body {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  height: auto;
+  background: black;
+}
+
+/*Landing*/
+#landing h1 {
+  font-size: 4rem;
+  color: #a70b0b;
+  font-family: 'Fuggles', cursive;
+}
+
+#landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40vw;
+          flex: 0 1 40vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("Untangle_main.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 4rem;
+}
+
+/*ATG*/
+#aboutthisgame {
+  display: inherit;
+  height: 100vh;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  background-image: url("Untangle_library.PNG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+#aboutthisgame h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+#aboutthisgame h3 {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+#purchase {
+  display: inherit;
+  height: 100vh;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  background-image: url("Untangle_classroom.PNG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+#purchase h2 {
+  color: white;
+  font-size: 5rem;
+  text-transform: uppercase;
+  background-color: lightgrey transparent;
+}
+
+.btn {
+  border: 1px grey solid;
+  font-size: 1.2rem;
+  color: black;
+  display: inline-block;
+  background-color: grey;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: black;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+footer h3 {
+  font-size: 1.8rem;
+  color: honeydew;
+}
+
+@media (min-width: 560px) {
+  .nav_toggle {
+    display: none;
+  }
+  .nav_menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .nav li {
+    display: block;
+  }
+  .nav a {
+    display: inline-block;
+  }
+  .nav a:hover {
+    background: #ddd;
+    color: black;
+    display: inline-block;
+  }
+  #aboutthisgame {
+    padding-top: 20vh;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .btn {
+    border: 1px grey solid;
+    font-size: 1.5rem;
+    color: black;
+    display: inline-block;
+    background-color: grey;
+  }
+  #purchase {
+    display: inherit;
+    height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1;
+  }
+  #purchase h2 {
+    color: black;
+    font-size: 6rem;
+    text-transform: uppercase;
+    background-color: lightgrey;
+  }
+}
+/*# sourceMappingURL=style.css.map */
