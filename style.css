@@ -137,7 +137,7 @@ body {
   -webkit-box-pack: inherit;
       -ms-flex-pack: inherit;
           justify-content: inherit;
-  background-image: url("Untangle_library.PNG");
+  background-image: url("Untangle_library.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -167,7 +167,7 @@ body {
   -webkit-box-pack: inherit;
       -ms-flex-pack: inherit;
           justify-content: inherit;
-  background-image: url("Untangle_classroom.PNG");
+  background-image: url("Untangle_classroom.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
