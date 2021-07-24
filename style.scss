@@ -7,8 +7,8 @@
     font-size: 3rem;
     width:1.5rem;
     text-transform: lowercase;
-    color:white;
-    font-weight: 400;
+    color:red;
+    font-weight: 900;
 }
 
 /*Navigation Bar*/
@@ -91,6 +91,7 @@
 
 
 /*Content*/
+
 body{
     font-family: 'PT Sans', sans-serif;
     margin: 0;
@@ -112,7 +113,7 @@ body{
     flex: 0 1 40vw;
     height: 100vh;
     justify-content: center;
-    background-image: url('Untangle_main.png');
+    background-image: url('Untangle_main.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -136,9 +137,6 @@ body{
     text-align: center;
     align-items: center;
     color:whitesmoke;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-
 }
 
 #aboutthisgame h2{
@@ -226,10 +224,12 @@ footer{
         }
 
         #aboutthisgame{
-            padding-top: 20vh;
+            padding-top: 30vh;
             padding-left: 10%;
             padding-right: 10%;
         }
+
+
 
         .btn{
             border:1px grey solid;
@@ -255,20 +255,10 @@ footer{
             font-size:6rem;
             text-transform: uppercase;
             background-color: lightgrey;
+            margin-top: 30vh;
     }
 
        
 
         
 }
-
-
-    
-
-
-
-
-
-    
-    
-

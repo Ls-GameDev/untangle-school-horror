@@ -6,8 +6,8 @@
   font-size: 3rem;
   width: 1.5rem;
   text-transform: lowercase;
-  color: white;
-  font-weight: 400;
+  color: red;
+  font-weight: 900;
 }
 
 /*Navigation Bar*/
@@ -118,7 +118,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("Untangle_main.png");
+  background-image: url("Untangle_main.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -137,7 +137,7 @@ body {
   -webkit-box-pack: inherit;
       -ms-flex-pack: inherit;
           justify-content: inherit;
-  background-image: url("Untangle_library.png");
+  background-image: url("Untangle_library.PNG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,8 +147,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: whitesmoke;
-  padding-top: 6rem;
-  padding-bottom: 2rem;
 }
 
 #aboutthisgame h2 {
@@ -167,7 +165,7 @@ body {
   -webkit-box-pack: inherit;
       -ms-flex-pack: inherit;
           justify-content: inherit;
-  background-image: url("Untangle_classroom.png");
+  background-image: url("Untangle_classroom.PNG");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -235,7 +233,7 @@ footer h3 {
     display: inline-block;
   }
   #aboutthisgame {
-    padding-top: 20vh;
+    padding-top: 30vh;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -263,6 +261,7 @@ footer h3 {
     font-size: 6rem;
     text-transform: uppercase;
     background-color: lightgrey;
+    margin-top: 30vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
