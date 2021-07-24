@@ -10,6 +10,8 @@
     raise awareness of school violence. Find out more on Untangle.  ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1407314288516075523/cXg2I1ia_400x400.jpg"
+            type="image/x-icon">
 </head>
 <body>
     <!--Navigation Bar -->
@@ -35,7 +37,7 @@
             <li id="Untangle"><a href="#landing">untangle</a></li>
             <li><a href="#aboutthisgame">about this game</a></li>
             <li><a href="#purchase">purchase</a></li>            
-            <li><a href="#">devlog</a></li>
+            <!--<li><a href="#">devlog</a></li>-->
             <li><a href="#footer">follow us</a></li>
         </ul>
     </nav>
@@ -70,9 +72,19 @@
             what happened to Alisha and help her out! </p>
     </div>
     <div id="purchase">
-        <h2>coming soon on steam</h2>
+        <h2 id="blink">coming soon on steam</h2>
+                                  <script type="text/javascript">
+                                      var blink = document.getElementById('blink');
+                                      setInterval(function() {
+                                          blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+                                      }, 1500);
+                                  </script>
+        
+        
+        <!--
         <a href="#" class="btn">
             <i class="fa fa-steam fa-sm" aria-hidden="true" > Add to your wishlist</i></a>
+        -->
 
     </div>
     </main>
