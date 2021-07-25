@@ -1,3 +1,4 @@
 User-Agent: *
 Allow: /
 
+Sitemap: https://github.com/Ls-GameDev/untangle-school-horror/blob/main/sitemap.xml
