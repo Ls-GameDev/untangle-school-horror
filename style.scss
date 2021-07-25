@@ -89,7 +89,6 @@
         display: none;
     }
 
-
 /*Content*/
 
 body{
@@ -98,7 +97,6 @@ body{
     height: auto;
     background: black;
 }
-
 /*Landing*/
 
 #landing h1{
@@ -123,142 +121,185 @@ body{
     font-size: 4rem;
 }
 
-/*ATG*/
-
-#aboutthisgame{
-    display: inherit;
+/*Library*/
+#lib{
+    background-color: black;
+}
+#lib-img{
+    display: flex;
     height: 100vh;
-    justify-content: inherit;
     background-image: url('Untangle_library.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    text-align: center;
+}
+
+#atg-text{
+    display: block;
+    color: blanchedalmond;
+    justify-content: center;
     align-items: center;
-    color:whitesmoke;
-}
-
-#aboutthisgame h2{
-    text-transform: capitalize;
-    font-size: 2rem;
-}
-#aboutthisgame h3{
-    text-transform: capitalize;
-    font-size: 1.8rem;
-}
-
-#purchase{
-    display: inherit;
-    height: 100vh;
-    justify-content: inherit;
-    background-image: url('Untangle_classroom.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
     text-align: center;
-    align-items: center;
-    color:whitesmoke;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
 
-}
-#purchase h2{
-        color:white;
-        font-size:5rem;
-        text-transform: uppercase;
-        background-color: lightgrey transparent;
-}
-
-.btn{
-    border:1px grey solid;
-    font-size: 1.2rem;
-    color:black;
-    display: inline-block;
-    background-color: grey;
-}
-
-.btn:hover{
-    background: #f4f4f4;
-}
-
-footer{
-    text-align: center;
-    padding: 2rem 1rem;
-    color: black;
-    margin:auto;
-    background:  rgba(0,0,0,0.4);
+    h2, h3{
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 400;
+        }
+    
+    h2{
+        font-size: 2rem;
+    }
 
     h3{
-        font-size: 1.8rem;
-        color:honeydew
+        font-size: 1.5rem;
     }
+
+}
+
+/*Classroom*/
+#classroom{
+    background-color: black;
+}
+
+#classroom-img{
+    display: flex;
+    height: 100vh;
+    background-image: url('Untangle_classroom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#purchase{
+    display: block;
+    padding-top: 25vh;
+    font-size: 2.75rem;
+    color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+    text-align: center;     
+    font-family: 'PT Sans', sans-serif;
+                   
+}
+
+/*ATG*/
+#aboutus{
+    background-color: black;
+    color:white;
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+#aboutus-title{
+    
+    font-size: 2rem;
+}
+
+img{
+    display:block;
+    width:100vw;
+}
+
+#aboutus-text{
+    display: block;
+}
+
+/*footer*/
+footer{
+    display: block;
+    height: 20vh;
+    padding-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2{
+        font-weight: 400;
+        font-size: 2rem;
+        
+    }
+}
+
+
+@media (min-width:1000px) {
+
+
+#atg-text{
+    padding-left: 35vh;
+    padding-right: 35vh;
+    padding-top: 10vh;
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+
+}
+#purchase{
+    font-size: 5rem;
+    padding-left: 5vh;
+    padding-right: 5vh;
+
+}
+
+
+}
+@media (min-width:700px){
+#purchase{
+    font-size: 5rem;
+    padding-top: 10vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+
+}
+
+     #aboutus-content{
+        display: flex;
+        img{
+            padding-left: 5vw;
+            width: 20%;
+        }
+
+    }
+
+    #aboutus-text{
+        padding-left: 5vw;
+    }
+
+    
+    
+
 }
 
 @media (min-width:560px){
-        .nav{
-            &_toggle{
-                display: none;
-            }
-            &_menu{
-                flex-direction: row;
-            }
-            li{
-                display: block;
-            
-            }
-
-            a{
-                display: inline-block;
-            }
-            a:hover{
-                background: #ddd;
-                color: black;
-                display: inline-block;
-                
-
-            }
-
+    .nav{
+        &_toggle{
+            display: none;
+        }
+        &_menu{
+            flex-direction: row;
+        }
+        li{
+            display: block;
         
         }
 
-        #aboutthisgame{
-            padding-top: 30vh;
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-
-
-
-        .btn{
-            border:1px grey solid;
-            font-size: 1.5rem;
-            color:black;
+        a{
             display: inline-block;
-            background-color: grey;
+        }
+        a:hover{
+            background: #ddd;
+            color: black;
+            display: inline-block;
+            
+
         }
 
-        #purchase{
-            display: inherit;
-            height: 100vh;
-            justify-content:center;
-            text-align: center;
-            align-items:center;
-            padding-top: 1;
     
-    
-        }
-
-        #purchase h2{
-            color:black;
-            font-size:6rem;
-            text-transform: uppercase;
-            background-color: lightgrey;
-            margin-top: 30vh;
     }
-
-       
-
-        
 }
