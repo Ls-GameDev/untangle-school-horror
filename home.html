@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://pbs.twimg.com/profile_images/1407314288516075523/cXg2I1ia_400x400.jpg"
             type="image/x-icon">
+    
 </head>
 <body>
     <!--Navigation Bar -->
@@ -77,8 +78,22 @@
     <div id="classroom">
         <div id="classroom-img">
             <div id="purchase">
-                    <h2>Coming Soon On <i class="fa fa-steam" aria-hidden="true"></i>
-                    Steam</h2>
+                <SCRIPT type="text/javascript">
+                    function JavaBlink() {
+                       var blinks = document.getElementsByTagName('JavaBlink');
+                       for (var i = blinks.length - 1; i >= 0; i--) {
+                          var s = blinks[i];
+                          s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+                       }
+                       window.setTimeout(JavaBlink, 1000);
+                    }
+                    if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+                    else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+                    else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+                    else window.onload = JavaBlink;
+                  </SCRIPT>
+                    <!--<div id="logo"><i class="fa fa-steam fa-2x" aria-hidden="true"></i></div>-->
+                    <h2><JavaBlink>Coming Soon On Steam</JavaBlink></h2>
             </div>
         </div>
     </div>
