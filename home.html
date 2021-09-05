@@ -1,140 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Untangle - School Horror Game| LsGameDev</title>
-    <meta name="description" content="Untangle the mystery surrounding 
+    <meta
+      name="description"
+      content="Untangle the mystery surrounding 
     Alisha's disappearance. Untangle is a school horror game built to 
-    raise awareness of school violence. Find out more on Untangle.  ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://pbs.twimg.com/profile_images/1407314288516075523/cXg2I1ia_400x400.jpg"
-            type="image/x-icon">
-    
-</head>
-<body>
+    raise awareness of school violence. Find out more on Untangle.  "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://pbs.twimg.com/profile_images/1407314288516075523/cXg2I1ia_400x400.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="owl.carousel.css" />
+    <link rel="stylesheet" href="owl.theme.default.css" />
+    <link rel="stylesheet" href="owl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
+  </head>
+  <body>
     <!--Navigation Bar -->
     <nav class="nav">
-        <input type="checkbox" class="nav_checkbox" id="nav_checkbox">
-        <label for="nav_checkbox" class="nav_toggle">
-            <svg class="menu" viewBox="0 0 100 80"
-            width="40" height="40">
-                <rect width="100" height="20"></rect>
-                <rect y="30" width="100" height="20"></rect>
-                <rect y="60" width="100" height="20"></rect>
-            </svg>
-            <svg  class="close" xmlns="http://www.w3.org/2000/svg" 
-            width="40" height="40" viewBox="0 0 50 50" 
-            overflow="visible" stroke="white" stroke-width="10" 
-            
-            >
-                <line x2="40" y2="40" />
-                <line x1="40" y2="40" />
-             </svg> 
-        </label>
-        <ul class="nav_menu">
-            <li id="Untangle"><a href="#landing">untangle</a></li>
-            <li><a href="#lib">about this game</a></li>
-            <li><a href="#classroom">purchase</a></li>  
-            <li><a href="#aboutus">about us</a></li>  
+      <input type="checkbox" class="nav_checkbox" id="nav_checkbox" />
+      <label for="nav_checkbox" class="nav_toggle">
+        <svg class="menu" viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="20"></rect>
+          <rect y="30" width="100" height="20"></rect>
+          <rect y="60" width="100" height="20"></rect>
+        </svg>
+        <svg
+          class="close"
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 50 50"
+          overflow="visible"
+          stroke="white"
+          stroke-width="10"
+        >
+          <line x2="40" y2="40" />
+          <line x1="40" y2="40" />
+        </svg>
+      </label>
+      <ul class="nav_menu">
+        <li id="Untangle"><a href="#landing">untangle</a></li>
+        <li><a href="#lib">about this game</a></li>
+        <li><a href="#classroom">purchase</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#aboutus">about us</a></li>
 
-            <!--<li><a href="#">devlog</a></li>-->
-            <li><a href="#footer">Follow us</a></li>
-        </ul>
+        <!--<li><a href="#">devlog</a></li>-->
+        <li><a href="#footer">Follow us</a></li>
+      </ul>
     </nav>
-        <!--Landing Page-->
+    <!--Landing Page-->
     <div id="landing">
-        <div id="landing-text">
-            <div id="landing-text-inner">
-                <SCRIPT type="text/javascript">
-                    function JavaBlink() {
-                       var blinks = document.getElementsByTagName('JavaBlink');
-                       for (var i = blinks.length - 1; i >= 0; i--) {
-                          var s = blinks[i];
-                          s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
-                       }
-                       window.setTimeout(JavaBlink, 1000);
-                    }
-                    if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
-                    else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
-                    else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
-                    else window.onload = JavaBlink;
-                  </SCRIPT>
-
-                <h1><JavaBlink>Untangle the mystery surrounding 
-                    Alisha's disappearance</JavaBlink></h1>
-                <i class="fa fa-angle-double-down fa-sm" aria-hidden="true" style="color:white" ></i>
-            </div>
+      <div id="landing-text">
+        <div id="landing-text-inner">
+          <h1>
+            <JavaBlink
+              >Untangle the mystery surrounding Alisha's
+              disappearance</JavaBlink
+            >
+          </h1>
+          <i
+            class="fa fa-angle-double-down fa-sm"
+            aria-hidden="true"
+            style="color: white"
+          ></i>
         </div>
+      </div>
     </div>
     <div id="lib">
-        <div id="lib-img">
-            <div id="atg-text">
-                <h2>About This Game</h2>
-                <p>
-                Untangle is built with Unity Game Engine. 
-                Untangle provides a first-person thriller-horror survival experience. 
-                The fictitious storyline taking place in school is set to raise awareness of school violence 
-                and bullying. Are you a bully or a victim?</p>
-                <h3>Background</h3>
-                <p>Alisha was reported missing in your former school. 
-                    She was a top student and a school bullying victim. 
-                    One day, you were dragged into the alternative version of your school. 
-                    Here, you discovered Alisha was dead and her vengeful spirit avenged herself 
-                    with a large massacre of the school bullies. To make sure you are not going to 
-                    be collateral damage, figure out what happened to Alisha and help her out!
-                </p>
-            </div>
+      <div id="lib-img">
+        <div id="atg-text">
+          <h2>About This Game</h2>
+          <p>
+            Untangle is built with Unity Game Engine. Untangle provides a
+            first-person thriller-horror survival experience. The fictitious
+            storyline taking place in school is set to raise awareness of school
+            violence and bullying. Are you a bully or a victim?
+          </p>
+          <h3>Background</h3>
+          <p>
+            Alisha was reported missing in your former school. She was a top
+            student and a school bullying victim. One day, you were dragged into
+            the alternative version of your school. Here, you discovered Alisha
+            was dead and her vengeful spirit avenged herself with a large
+            massacre of the school bullies. To make sure you are not going to be
+            collateral damage, figure out what happened to Alisha and help her
+            out!
+          </p>
         </div>
+      </div>
     </div>
     <div id="classroom">
-        <div id="classroom-img">
-            <div id="purchase">
-               
-                    <!--<div id="logo"><i class="fa fa-steam fa-2x" aria-hidden="true"></i></div>-->
-                    <h2>Purchase on Steam</h2>
-                    <iframe src="https://store.steampowered.com/widget/1686850/?t=Untangle%20is%20built%20with%20
+      <div id="classroom-img">
+        <div id="purchase">
+          <!--<div id="logo"><i class="fa fa-steam fa-2x" aria-hidden="true"></i></div>-->
+          <h2>Purchase on Steam</h2>
+          <iframe
+            src="https://store.steampowered.com/widget/1686850/?t=Untangle%20is%20built%20with%20
                     Unity%20Game%20Engine.%20Untangle%20provides%20a%20first-person%20thriller-horror%20survival
                     %20experience.%20The%20fictitious%20storyline%20taking%20place%20in%20school%20is%20set%20to%20
                     raise%20awareness%20of%20school%20violence%20and%20bullying.%20%0AAre%20you%20a%20bully%20or%20
-                    a%20victim%3F" frameborder="0" width="100%" height="190"></iframe>
-            </div>
+                    a%20victim%3F"
+            frameborder="0"
+            width="100%"
+            height="190"
+          ></iframe>
         </div>
+      </div>
     </div>
+
+    <div id="gallery">
+      <h2 style="font-size: 2rem">Gallery</h2>
+      <div>
+        <div class="owl-carousel owl-theme">
+          <div class="image-container">
+            <a href="./assets/Vertical Hero.png">
+              <img id="1" src="./assets/Vertical Hero.png" alt="Hero"
+            /></a>
+          </div>
+          <div class="image-container">
+            <a href="./assets/massacre.png">
+              <img id="2" src="./assets/massacre.png" alt="Massacre"
+            /></a>
+          </div>
+
+          <div class="image-container">
+            <a href="./assets//Header Capsule.png">
+              <img
+                class="three"
+                src="./assets//Header Capsule.png"
+                alt="Twins"
+                height="300"
+            /></a>
+            <a href="./assets/Library logo.png">
+              <img
+                class="three"
+                src="./assets/Library logo.png"
+                alt="Untangle"
+                height="300"
+            /></a>
+          </div>
+
+          <div class="image-container">
+            <a href="./assets//Screenshot_1.png">
+              <img
+                class="three"
+                src="./assets//Screenshot_1.png"
+                alt="classroom"
+                height="300"
+            /></a>
+            <a href="./assets/Screenshot_2.png">
+              <img
+                class="three"
+                src="./assets/Screenshot_2.png"
+                alt="library"
+                height="300"
+            /></a>
+          </div>
+
+          <div class="image-container">
+            <a href="./assets/Screenshot_3.png">
+              <img
+                class="three"
+                src="./assets/Screenshot_3.png"
+                alt="door"
+                height="300"
+            /></a>
+            <a href="./assets/Screenshot_4.png">
+              <img
+                class="three"
+                src="./assets/Screenshot_4.png"
+                alt="corridor"
+                height="300"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="aboutus">
-        <div id="aboutus-title">
-            <h2 style="font-size: 2rem;">About Me</h2>
+      <div id="aboutus-title">
+        <h2 style="font-size: 2rem">About Me</h2>
         <div id="aboutus-content">
-            <img src="https://pbs.twimg.com/profile_images/1407314288516075523/cXg2I1ia_400x400.jpg" 
+          <img
+            src="https://pbs.twimg.com/profile_images/1407314288516075523/cXg2I1ia_400x400.jpg"
             alt="lsgamdev icon"
-            >
-        <div id="aboutus-text">
-            <p style="font-size: 1.5rem;">I'm... <br></p>
-                <p style="font-size: 1rem;">
-                    A Drean Chaser.<br>
-                    A Game Lover.<br>
-                A self-taught Solo Indie Game Developer. <br>
-               A cat lover. <br>
-               A full-time student.</p>
-            </div></div>
-            
+          />
+          <div id="aboutus-text">
+            <p style="font-size: 1.5rem">I'm... <br /></p>
+            <p style="font-size: 1rem">
+              A Drean Chaser.<br />
+              A Game Lover.<br />
+              A self-taught Solo Indie Game Developer. <br />
+              A cat lover. <br />
+              A full-time student.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
 
-<footer id="footer">
-    <h2>Join me on Social Media</h2>
-    <a href="https://www.facebook.com/chiengli.sheng" style="color:blue">
-        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-    <a href="https://twitter.com/ChiengLisheng">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true" style="color:rgb(0, 132, 255)"></i></a>
-    <a href="https://www.instagram.com/lsgamedev/">
-        <i class="fa fa-instagram fa-2x" aria-hidden="true" style="color:purple"></i></a>
-    <a href="https://www.youtube.com/channel/UChtTseXfuV8xfPG1MfWURcw">
-        <i class="fa fa-youtube fa-2x" aria-hidden="true" style="color:red"></i></a>
-</footer>
-
-
-</body>
+    <footer id="footer">
+      <h2>Join me on Social Media</h2>
+      <a href="https://www.facebook.com/chiengli.sheng" style="color: blue">
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i
+      ></a>
+      <a href="https://twitter.com/ChiengLisheng">
+        <i
+          class="fa fa-twitter fa-2x"
+          aria-hidden="true"
+          style="color: rgb(0, 132, 255)"
+        ></i
+      ></a>
+      <a href="https://www.instagram.com/lsgamedev/">
+        <i
+          class="fa fa-instagram fa-2x"
+          aria-hidden="true"
+          style="color: purple"
+        ></i
+      ></a>
+      <a href="https://www.youtube.com/channel/UChtTseXfuV8xfPG1MfWURcw">
+        <i class="fa fa-youtube fa-2x" aria-hidden="true" style="color: red"></i
+      ></a>
+      <script src="jquery.js"></script>
+      <script src="owl.carousel.js"></script>
+      <script src="owl.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+      <script type="text/javascript">
+        function JavaBlink() {
+          var blinks = document.getElementsByTagName("JavaBlink");
+          for (var i = blinks.length - 1; i >= 0; i--) {
+            var s = blinks[i];
+            s.style.visibility =
+              s.style.visibility === "visible" ? "hidden" : "visible";
+          }
+          window.setTimeout(JavaBlink, 1000);
+        }
+        if (document.addEventListener)
+          document.addEventListener("DOMContentLoaded", JavaBlink, false);
+        else if (window.addEventListener)
+          window.addEventListener("load", JavaBlink, false);
+        else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+        else window.onload = JavaBlink;
+      </script>
+    </footer>
+  </body>
 </html>

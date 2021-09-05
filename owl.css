@@ -1,0 +1,31 @@
+.gallery {
+  margin: auto 2vw;
+}
+.gallery .image-container {
+  height: 80vh;
+  padding: 10;
+}
+
+.owl-prev {
+  left: -30px;
+}
+
+.owl-next {
+  right: -30px;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 35%;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 80px;
+  color: black;
+}
+
+.gallery .item img {
+  padding: 10;
+}
